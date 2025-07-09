@@ -11,13 +11,13 @@ Proyek ini dilengkapi GUI berbasis `CustomTkinter` serta fitur logging, pengambi
 
 ## 📁 Struktur Direktori
 
-AERORA/
-├── main.py # Entry point GUI utama
-├── Aerora.py # Modul fungsi pendukung (baca file, port, dsb)
-├── motion/ # Folder berisi file CSV gerakan servo
-├── data/ # Folder hasil data logging otomatis
-├── requirements.txt # Daftar dependensi
-└── README.md # Dokumentasi
+AERORA/ <br>
+├── main.py # Entry point GUI utama <br>
+├── Aerora.py # Modul fungsi pendukung (baca file, port, dsb) <br>
+├── motion/ # Folder berisi file CSV gerakan servo <br>
+├── data/ # Folder hasil data logging otomatis <br>
+├── requirements.txt # Daftar dependensi <br>
+└── README.md # Dokumentasi <br>
 
 ---
 
@@ -62,14 +62,14 @@ Disarankan menggunakan Python versi 3.10.x karena lebih stabil dan kompatibel de
 
 ### 2. Instalasi Python (Windows)
 Jalankan file installer
-    - ✅ Centang Add Python 3.10 to PATH
-    - Klik Customize installation
+- ✅ Centang Add Python 3.10 to PATH
+- Klik Customize installation
 
 Pada halaman berikutnya, aktifkan semua opsi
-    - ✅ Centang juga:
-    - "Install for all users"
-    - "Add Python to environment variables"
-    - Klik Install
+- ✅ Centang juga:
+- "Install for all users"
+- "Add Python to environment variables"
+- Klik Install
 
 ### 3. Clone Repository
 ```bash
@@ -103,8 +103,8 @@ Gunakan virtual environment, lalu install:
 ```
 
 ### 6. **Format File CSV Input (Motion)**
-Pastikan file motion disimpan di folder motion/. Perhatikan juga
-format filenya (contoh ada di motion/example.csv)
+Pastikan file motion disimpan di folder motion/. <br>
+Perhatikan juga format filenya (contoh ada di motion/example.csv)
 
 ### 7. **Jalankan Program**
 Windows:
@@ -125,26 +125,25 @@ Linux / MacOS:
 | Linux          | `/dev/ttyUSB0`         | Umumnya berbasis USB-UART converter |
 | macOS          | `/dev/tty.usbserial-*` | Perangkat berbasis FTDI/serial      |
 
-**Masukkan Nama File CSV**
-Isikan nama file (tanpa .csv) pada kolom input (misal: angkat_tangan)
+**Masukkan Nama File CSV** <br>
+Isikan nama file (tanpa .csv) pada kolom input (misal: angkat_tangan) <br>
 
-**Jalankan Gerakan**
-Pilih metode:
-NonGroup: Menulis dan membaca ke setiap servo secara individual
-GroupSync: Menulis dan membaca semua servo secara paralel (lebih cepat)
+**Jalankan Gerakan** <br>
+Pilih metode: <br>
+NonGroup: Menulis dan membaca ke setiap servo secara individual <br> <br>
+GroupSync: Menulis dan membaca semua servo secara paralel (lebih cepat) <br>
 
-Tombol kontrol:
-⏸ Pause gerakan
-▶ Continue dari posisi pause
-⏹ Stop gerakan dan reset ulang
+Tombol kontrol: <br>
+⏸ Pause gerakan <br>
+▶ Continue dari posisi pause <br>
+⏹ Stop gerakan dan reset ulang <br>
 
 ### 9. **Hasil Logging**
-Hasil Logging
-Setelah gerakan dijalankan, file hasil akan otomatis disimpan di folder data/.
+Setelah gerakan dijalankan, file hasil akan otomatis disimpan di folder data/. 
 
-Format nama file:
-groupsync_namafile_27servo_20250708_093100.csv
-nongroup_namafile_27servo_20250708_093205.csv
+Format nama file: <br>
+groupsync_namafile_27servo_20250708_093100.csv <br>
+nongroup_namafile_27servo_20250708_093205.csv <br>
 
 ### 10. **Melakukan Analisis**
 Pastikan sudah menjalankan kedua metode (Group dan NonGroup)
