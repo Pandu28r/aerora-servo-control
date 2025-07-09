@@ -1,6 +1,5 @@
 venv/
 dynamixel_sdk/
-data/*.csv
 motion/olegoleg.csv
 
 __pycache__/

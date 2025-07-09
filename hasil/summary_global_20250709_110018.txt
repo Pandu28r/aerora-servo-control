@@ -1,0 +1,33 @@
+Metode: GroupSync
+  Jumlah Iterasi: 12.00
+  Rata-rata Waktu Operasi (ms): 1215.99
+  Waktu Operasi Maksimum (ms): 2744.42
+  Waktu Operasi Minimum (ms): 264.36
+  Total Error: 12.00
+  Total Recovery: 1.00
+  Total Timeout: 0.00
+  Rata-rata CPU End (%): 50.33
+  Rata-rata Memory (MB): 80.07
+  Rata-rata Waktu Write (ms): 14.62
+  Rata-rata Waktu Read (ms): 61.48
+
+Metode: NonGroupSync
+  Jumlah Iterasi: 12.00
+  Rata-rata Waktu Operasi (ms): 2807.49
+  Waktu Operasi Maksimum (ms): 4737.68
+  Waktu Operasi Minimum (ms): 1821.27
+  Total Error: 0.00
+  Total Recovery: 0.00
+  Total Timeout: 1.00
+  Rata-rata CPU End (%): 30.76
+  Rata-rata Memory (MB): 80.17
+  Rata-rata Waktu Write (ms): 1308.94
+  Rata-rata Waktu Read (ms): 735.06
+
+Interpretasi:
+Total data GroupSync: 12
+Total data NonGroupSync: 12
+
+GroupSync lebih cepat secara rata-rata.
+NonGroupSync menghasilkan total error lebih sedikit.
+GroupSync menggunakan CPU lebih tinggi.

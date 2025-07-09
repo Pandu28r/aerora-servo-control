@@ -1,6 +1,6 @@
 # AERORA - Servo Control System
 
-**AERORA** adalah sistem kontrol servo berbasis Python yang memungkinkan pengujian, monitoring, dan analisis gerakan motor **Dynamixel** (XL-320 dan XM-430) menggunakan dua pendekatan:
+**AERORA - Servo Control System** adalah sistem kontrol servo berbasis Python yang memungkinkan pengujian, monitoring, dan analisis gerakan motor **Dynamixel** (XL-320 dan XM-430) menggunakan dua pendekatan:
 
 - ✅ **Non-GroupSync Write**
 - ✅ **GroupSync Write**
@@ -10,6 +10,7 @@ Proyek ini dilengkapi GUI berbasis `CustomTkinter` serta fitur logging, pengambi
 ---
 
 ## 📁 Struktur Direktori
+
 AERORA/
 ├── main.py # Entry point GUI utama
 ├── Aerora.py # Modul fungsi pendukung (baca file, port, dsb)
@@ -17,11 +18,6 @@ AERORA/
 ├── data/ # Folder hasil data logging otomatis
 ├── requirements.txt # Daftar dependensi
 └── README.md # Dokumentasi
-
-yaml
-Copy
-Edit
-
 
 ---
 
@@ -38,37 +34,89 @@ Edit
 
 ## 📌 Versi
 
-| Versi  | Tanggal Rilis  | Deskripsi Singkat                   |
-|--------|----------------|-------------------------------------|
-| v1.0.0 | 9 Juli 2025    | Rilis awal: GUI + Group vs NonGroup |
+| Versi  | Tanggal Rilis  | Deskripsi Singkat                               |
+|--------|----------------|-------------------------------------------------|
+| v1.0.0 | 9 Juli 2025    | Rilis awal: GUI + Group vs NonGroup             |
+| v1.0.0 | 9 Juli 2025    | Update: Memperbarui README dan requirements.txt |
 
---
+---
 
 ## 🚀 Cara Menjalankan
 
-### 1. Clone Repository
+### 1. Install Python v 3.10
+Disarankan menggunakan Python versi 3.10.x karena lebih stabil dan kompatibel dengan semua dependensi.
+
+- Kunjungi https://www.python.org/downloads/release/python-31011/
+- Windows installer (64-bit): https://www.python.org/ftp/python/3.10.11/python-3.10.11-amd64.exe 
+- MacOS: 
 ```bash
-git clone https://github.com/Pandu28r/aerora-servo-control.git
-cd aerora-servo-control
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    brew install python@3.10
+```
+- Linux:
+```bash
+    sudo apt update
+    sudo apt install python3.10 python3.10-venv python3.10-dev
+```
+- wpython-3.10.11-amd64.exe
+
+### 2. Instalasi Python (Windows)
+Jalankan file installer
+    - ✅ Centang Add Python 3.10 to PATH
+    - Klik Customize installation
+
+Pada halaman berikutnya, aktifkan semua opsi
+    - ✅ Centang juga:
+    - "Install for all users"
+    - "Add Python to environment variables"
+    - Klik Install
+
+### 3. Clone Repository
+```bash
+    git clone https://github.com/Pandu28r/aerora-servo-control.git
+    cd aerora-servo-control
 ```
 
-### 2. **Instalasi Dependency**
+### 4. Buat dan Aktifkan Virtual Environment
+Setelah Python 3.10 terpasang:
+- Windows:
+```bash
+    python -m venv venv
+    venv\Scripts\activate
+```
+- MacOS:
+```bash
+    python3.10 -m venv venv
+    source venv/bin/activate
+```
+- Linux:
+```bash
+    python3.10 -m venv venv
+    source venv/bin/activate
+```
+
+### 5. **Instalasi Dependency**
 Gunakan virtual environment, lalu install:
 
 ```bash
-pip install -r requirements.txt
+    pip install -r requirements.txt
 ```
 
-### 3. **Format File CSV Input (Motion)**
+### 6. **Format File CSV Input (Motion)**
 Pastikan file motion disimpan di folder motion/. Perhatikan juga
 format filenya (contoh ada di motion/example.csv)
 
-### 4. **Jalankan Program**
+### 7. **Jalankan Program**
+Windows:
 ```bash
-python main.py
+    python main.py
+```
+Linux / MacOS:
+```bash
+    python3 main.py
 ```
 
-### 5. **Cara memakai GUI**
+### 8. **Cara memakai GUI**
 
 **Lakukan Koneksi Port**
 | Sistem Operasi | Contoh Port            | Keterangan                          |
@@ -90,7 +138,7 @@ Tombol kontrol:
 ▶ Continue dari posisi pause
 ⏹ Stop gerakan dan reset ulang
 
-### 6. **Hasil Logging**
+### 9. **Hasil Logging**
 Hasil Logging
 Setelah gerakan dijalankan, file hasil akan otomatis disimpan di folder data/.
 
@@ -98,7 +146,7 @@ Format nama file:
 groupsync_namafile_27servo_20250708_093100.csv
 nongroup_namafile_27servo_20250708_093205.csv
 
-### 7. **Melakukan Analisis**
+### 10. **Melakukan Analisis**
 Pastikan sudah menjalankan kedua metode (Group dan NonGroup)
 - Klik tombol Analisis
 - Akan muncul jendela:
@@ -123,9 +171,4 @@ Universitas Negeri Malang – Teknik Informatika
 Seluruh kode dan dokumentasi pada repositori ini hanya digunakan sebagai pelengkap penelitian.  
 Tidak diperkenankan untuk digunakan, disalin, dimodifikasi, atau disebarluaskan tanpa izin tertulis dari pemilik.
 
-© 2025 Myrza Pandu Pratama. All rights reserved.
-
-
-
-
-
+© 2025 Myrza Pandu Pamungkas. All rights reserved.

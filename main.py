@@ -877,7 +877,7 @@ def motion_run_groupsync():
         entry_input.pack(fill="x", pady=(0, 15))
         tombol_nongroup.pack(side="left", padx=(0, 10))
         tombol_group.pack(side="left")
-        tombol_analisis.pack(side="left", padx=(0,10))
+        tombol_analisis.pack(side="left", padx=(10,0))
         is_pause = False
         is_gerak = False
         is_stop = False
@@ -1074,7 +1074,7 @@ def motion_run_nongroupsync():
         entry_input.pack(fill="x", pady=(0, 15))
         tombol_nongroup.pack(side="left", padx=(0, 10))
         tombol_group.pack(side="left")
-        tombol_analisis.pack(side="left", padx=(0,10))
+        tombol_analisis.pack(side="left", padx=(10,0))
         is_pause = False
         is_gerak = False
         is_stop = False
